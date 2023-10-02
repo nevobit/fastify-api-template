@@ -28,8 +28,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix",
+    "**/*.{js,ts}": [
+      "pnpm husky",
       "git add"
     ]
   },
