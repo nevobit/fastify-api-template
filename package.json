@@ -29,8 +29,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts}": [
-      "pnpm husky",
-      "git add"
+      "pnpm husky"
     ]
   },
   "keywords": [],
