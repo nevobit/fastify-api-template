@@ -21,6 +21,14 @@
       "publish": false
     }
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E $1"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": ["eslint --fix", "git add"]
+  },  
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -44,6 +52,10 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "fastify": "4.23.2"
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "fastify": "4.23.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1"
   }
 }
